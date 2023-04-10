@@ -12,6 +12,7 @@ class CardsContainer extends React.Component {
   render() {
     let cardBg = [cardBg1, cardBg2, cardBg3];
     let personImg = [person1, person2, person3];
+
     return (
       <div className="cardsContainer">
         {cardBg.map((card, index) => {

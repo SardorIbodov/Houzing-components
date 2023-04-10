@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .card {
   width: 381px;
   border-radius: 3px;
+  transition: 0.25s all linear;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px #e6e9ec;
 }
 
 /* CARD BACKGROUND */
@@ -146,8 +155,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.25s all linear;
 }
 
-.heart {
+.price_icon:hover {
   background-color: #f6f8f9;
 }

@@ -27,7 +27,9 @@ class Card extends React.Component {
             <div className="person">
               <img src={this.props.personImg} alt="" />
             </div>
-            <h3 className="card_title">New Apartment Nice Wiew</h3>
+            <a href="#">
+              <h3 className="card_title">New Apartment Nice Wiew</h3>
+            </a>
             <p className="card_subtitle">Quincy St, Brooklyn, NY, USA</p>
             <div className="card_properties">
               <div className="card_property">
