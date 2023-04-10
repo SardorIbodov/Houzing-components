@@ -1,6 +1,5 @@
 import React from "react";
 import "./card.css";
-import person1 from "../../assets/icons/person1.svg";
 import bedIcon from "../../assets/icons/bed.svg";
 import bathIcon from "../../assets/icons/bath.svg";
 import carIcon from "../../assets/icons/car.svg";
@@ -10,13 +9,12 @@ import heartIcon from "../../assets/icons/heart.svg";
 
 class Card extends React.Component {
   render() {
-    console.log(this.props.backgroundColor);
     return (
       <div className="card">
         {/* CARD-BACKGROUND  */}
         <div
           className="card_bg"
-          style={{ backgroundImage: `url(${this.props.backgroundColor})` }}
+          style={{ backgroundImage: `url(${this.props.backgroundImage})` }}
         >
           <span className="card_bg-pins featured">featured</span>
           <span className="card_bg-pins sale">for sale</span>
@@ -27,7 +25,7 @@ class Card extends React.Component {
         <div className="card_info">
           <div className="card_info-content">
             <div className="person">
-              <img src={person1} alt="" />
+              <img src={this.props.personImg} alt="" />
             </div>
             <h3 className="card_title">New Apartment Nice Wiew</h3>
             <p className="card_subtitle">Quincy St, Brooklyn, NY, USA</p>
@@ -59,6 +57,9 @@ class Card extends React.Component {
             </div>
           </div>
         </div>
+        {/* ---------- */}
+
+        {/* CARD-PRICE */}
         <div className="card_price">
           <div className="card_charge">
             <p className="charge_sale">$2,800/mo</p>
@@ -73,6 +74,7 @@ class Card extends React.Component {
             </div>
           </div>
         </div>
+        {/* ---------- */}
       </div>
     );
   }
